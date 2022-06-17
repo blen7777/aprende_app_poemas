@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- <item
+        android:id="@+id/navigation_cuentos"
+        android:icon="@drawable/ic_cuentos"
+        android:title="Cuentos" />
+    <item
+        android:id="@+id/navigation_adivinanzas"
+        android:icon="@drawable/ic_adivinanzas"
+        android:title="Adivinanzas" /> -->
+
+    <item
+        android:id="@+id/navigation_poemas"
+        android:icon="@drawable/ic_cuentos"
+        android:title="Poemas" />
+
+    <item
+        android:id="@+id/navigation_chistes"
+        android:icon="@drawable/ic_adivinanzas"
+        android:title="Chistes" />
+
+
+    <item
+        android:id="@+id/navigation_sugerencia"
+        android:iconTint="@color/white_text"
+        android:icon="@drawable/ic_email_black_24dp"
+        android:title="Sugerencias" />
+
+
+</menu>

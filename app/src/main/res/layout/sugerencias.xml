@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:elevation="8dp"
+        android:orientation="vertical"
+        android:paddingTop="90dp"
+        android:paddingRight="10dp"
+        android:background="@color/white_text"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:id="@+id/title_suggestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/merienda_one"
+            android:text="@string/title_suggestion"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="55sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/suggestion_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/suggestion_description"
+            android:textColor="@color/secondary_text"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/suggestion_subject"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:ems="12"
+            android:fontFamily="sans-serif"
+            android:hint="@string/suggestion_subject"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/suggestion_body"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:hint="@string/suggestion_body"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/suggestino_save"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@color/dark_color_red"
+            android:fontFamily="sans-serif"
+            android:onClick="save_sugg"
+            android:padding="4dp"
+            android:text="@string/btn_suggestion"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView_sugerencia"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/id_banner">
+        </com.google.android.gms.ads.AdView>
+    </LinearLayout>
+
+</LinearLayout>

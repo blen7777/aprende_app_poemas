@@ -1,0 +1,123 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:fillViewport="false">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="fill_parent"
+            card_view:cardElevation="12dp"
+            android:background="#fff"
+            android:layout_height="230dp">
+
+            <ImageView
+                android:id="@+id/image_cuento_banner"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                android:onClick="addFavorito"
+                android:src="@drawable/images" />
+
+            <!--<android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:src="@drawable/ic_fail_connect"
+                android:layout_margin="16dp" />-->
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView_cuentos_detail_full"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/id_banner">
+        </com.google.android.gms.ads.AdView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:id="@+id/titulo_view"
+            android:fontFamily="@font/arbutus_slab"
+            android:textColor="@color/secondary_text"
+            android:text="Titulo delcuento dos"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="6dp"
+            android:layout_gravity="center"
+            android:padding="6dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:id="@+id/autor_view"
+            android:text="Autor Name"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="@font/aclonica"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:id="@+id/cuento_id"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:id="@+id/cuento_img_name"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:id="@+id/cuento_video_name"
+            android:visibility="gone" />
+
+
+        <com.codesgood.views.JustifiedTextView
+            android:id="@+id/cuerpo_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:fontFamily="@font/arbutus_slab"
+            android:gravity="center"
+            android:padding="13dp"
+            android:text="@string/cuenrpo_cuento"
+            android:textSize="26sp" />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView_cuentos_detail_full2"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/id_banner">
+        </com.google.android.gms.ads.AdView>
+
+    </LinearLayout>
+
+</ScrollView>

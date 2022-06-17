@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "612676616062",
+    "firebase_url": "https://aprende-app-c50d6.firebaseio.com",
+    "project_id": "aprende-app-c50d6",
+    "storage_bucket": "aprende-app-c50d6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:612676616062:android:420e92b629331398623d2f",
+        "android_client_info": {
+          "package_name": "com.joselopez.aprendeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "612676616062-s791bthinb8388s3fk3dkfd8dvj2njjt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtKQuQf2g4H2kc1XYbHVgatnAVoXKuk_4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "612676616062-s791bthinb8388s3fk3dkfd8dvj2njjt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

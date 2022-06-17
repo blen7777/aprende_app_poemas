@@ -1,0 +1,96 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_adivinanza"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardBackgroundColor="@color/white_text"
+    card_view:cardCornerRadius="2dp"
+    card_view:cardElevation="8dp"
+    android:outlineAmbientShadowColor="@color/dark_color_red"
+    card_view:cardMaxElevation="12dp"
+    android:layout_margin="6dp">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cuerpo_adivinanza"
+                android:text="Curabitur en lacus ac velit ornare lobortis. Vestíbulo rutinario, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi"
+                android:textColor="@color/secondary_text"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:fontFamily="@font/font"
+                android:layout_width="match_parent"
+                android:layout_below="@id/image_cuento"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/respuesta"
+                android:text="Caperucita roja"
+                android:textColor="@color/secondary_text"
+                android:textSize="32sp"
+                android:gravity="center"
+                android:layout_gravity="top"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:fontFamily="@font/aclonica"
+                android:layout_width="match_parent"
+                android:layout_below="@id/image_cuento"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/respuesta_event"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAcent_two"
+                android:textColor="#fff"
+                android:onClick="verRespuesta"
+                android:textSize="24sp"
+                android:text="Ver Respuesta" />
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/primary_light"
+                android:textColor="#fff"
+                android:onClick="Regresar"
+                android:visibility="gone"
+                android:textSize="24sp"
+                android:text="Ocultar Respuesta" />
+
+            <TextView
+                android:id="@+id/id_adivinanza"
+                android:text="cuenti10"
+                android:textColor="@color/colorAccent"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

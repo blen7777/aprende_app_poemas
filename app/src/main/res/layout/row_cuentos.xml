@@ -1,0 +1,113 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_cuentos"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F1F1F1"
+    card_view:cardMaxElevation="12dp"
+    android:layout_margin="6dp">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_cuento"
+                android:layout_width="fill_parent"
+                android:scaleType="centerCrop"
+                android:layout_alignParentTop="true"
+                android:layout_height="180dp"
+                android:src="@drawable/ic_broken_image_black_24dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="4dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title_cuento"
+                android:text="Caperucita roja"
+                android:textColor="@color/secondary_text"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:fontFamily="@font/aclonica"
+                android:layout_width="match_parent"
+                android:layout_below="@id/image_cuento"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/id_cuento"
+                android:textColor="@color/colorAccent"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/cuerpo"
+                android:text="cuenti10"
+                android:textColor="@color/colorAccent"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/autor"
+                android:text="cuenti10"
+                android:textColor="@color/colorAccent"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/video"
+                android:text="cuenti10"
+                android:textColor="@color/colorAccent"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/imgPath"
+                android:text="cuenti10"
+                android:textColor="@color/colorAccent"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
